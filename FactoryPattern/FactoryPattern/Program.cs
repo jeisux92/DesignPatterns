@@ -9,11 +9,10 @@ namespace FactoryPattern
     {
 
         static void Main(string[] args)
-        {
-            ShapeFactory shapeFactory = new ShapeFactory();
-            IShape shapeCircle = shapeFactory.GetShape(ShapeTypes.Circle);
+        {            
+            IShape shapeCircle = ShapeFactory.GetShape(ShapeTypes.Circle);
             shapeCircle.Draw();
-            IShape shapeRectangle = shapeFactory.GetShape(ShapeTypes.Rectangle);
+            IShape shapeRectangle = ShapeFactory.GetShape(ShapeTypes.Rectangle);
             shapeRectangle.Draw();
 
             Console.WriteLine("Hello World!");

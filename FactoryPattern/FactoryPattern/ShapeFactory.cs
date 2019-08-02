@@ -4,9 +4,9 @@ using System.Text;
 
 namespace FactoryPattern
 {
-    public class ShapeFactory
+    public static class ShapeFactory
     {
-        public IShape GetShape(ShapeTypes shapeTypes)
+        public static IShape GetShape(ShapeTypes shapeTypes)
         {
             switch (shapeTypes)
             {
